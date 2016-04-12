@@ -17,7 +17,7 @@
         }
         // either an array or an object
         var id = node.$id;
-        if (id && !isNaN(id)){ nextSampleNodeId = Math.max(nextSampleNodeId, math.ceil(id)) + 1;}
+        if (id && !isNaN(id)){ nextSampleNodeId = Math.max(nextSampleNodeId, Math.ceil(id)) + 1;}
         util.forEach(node, function(n){
             findHighestSampleNodeId(n);
         });
